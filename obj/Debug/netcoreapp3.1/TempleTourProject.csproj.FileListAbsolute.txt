@@ -1,0 +1,75 @@
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/bin/Debug/netcoreapp3.1/appsettings.Development.json
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/bin/Debug/netcoreapp3.1/appsettings.json
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/bin/Debug/netcoreapp3.1/TempleTourProject.deps.json
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/bin/Debug/netcoreapp3.1/TempleTourProject.runtimeconfig.json
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/bin/Debug/netcoreapp3.1/TempleTourProject.runtimeconfig.dev.json
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/bin/Debug/netcoreapp3.1/TempleTourProject.dll
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/bin/Debug/netcoreapp3.1/TempleTourProject.pdb
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/bin/Debug/netcoreapp3.1/TempleTourProject.Views.dll
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/bin/Debug/netcoreapp3.1/TempleTourProject.Views.pdb
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/TempleTourProject.csproj.AssemblyReference.cache
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/TempleTourProject.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/TempleTourProject.AssemblyInfoInputs.cache
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/TempleTourProject.AssemblyInfo.cs
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/TempleTourProject.csproj.CoreCompileInputs.cache
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/TempleTourProject.MvcApplicationPartsAssemblyInfo.cache
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/TempleTourProject.RazorAssemblyInfo.cache
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/TempleTourProject.RazorAssemblyInfo.cs
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/staticwebassets/TempleTourProject.StaticWebAssets.Manifest.cache
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/staticwebassets/TempleTourProject.StaticWebAssets.xml
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/scopedcss/bundle/TempleTourProject.styles.css
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/TempleTourProject.TagHelpers.input.cache
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/TempleTourProject.TagHelpers.output.cache
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/TempleTourProject.RazorCoreGenerate.cache
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/TempleTourProject.RazorTargetAssemblyInfo.cache
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/TempleTourProject.RazorTargetAssemblyInfo.cs
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/TempleTourProject.Views.pdb
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/TempleTourProject.dll
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/TempleTourProject.pdb
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/TempleTourProject.genruntimeconfig.cache
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/TempleTourProject.csproj.CopyComplete
+/Users/dannybellboy/Projects/TempleTourProject/TempleTourProject/obj/Debug/netcoreapp3.1/Razor/Views/Home/SignUp.cshtml.g.cs
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\bin\Debug\netcoreapp3.1\TempleTourProject.exe
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\bin\Debug\netcoreapp3.1\TempleTourProject.deps.json
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\bin\Debug\netcoreapp3.1\TempleTourProject.runtimeconfig.json
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\bin\Debug\netcoreapp3.1\TempleTourProject.runtimeconfig.dev.json
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\bin\Debug\netcoreapp3.1\TempleTourProject.dll
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\bin\Debug\netcoreapp3.1\TempleTourProject.pdb
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\bin\Debug\netcoreapp3.1\TempleTourProject.Views.dll
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\bin\Debug\netcoreapp3.1\TempleTourProject.Views.pdb
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.csproj.AssemblyReference.cache
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.AssemblyInfoInputs.cache
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.AssemblyInfo.cs
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.csproj.CoreCompileInputs.cache
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.RazorAssemblyInfo.cache
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.RazorAssemblyInfo.cs
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\staticwebassets\TempleTourProject.StaticWebAssets.Manifest.cache
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\staticwebassets\TempleTourProject.StaticWebAssets.xml
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\scopedcss\bundle\TempleTourProject.styles.css
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.TagHelpers.input.cache
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.TagHelpers.output.cache
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.RazorCoreGenerate.cache
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\Razor\Views\Home\SignUp.cshtml.g.cs
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.RazorTargetAssemblyInfo.cache
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.RazorTargetAssemblyInfo.cs
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.Views.pdb
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.dll
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.pdb
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.genruntimeconfig.cache
+C:\Users\natet\OneDrive\Documents\BYU\1.9 IS 413\TempleTourProject\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.csproj.CopyComplete
