@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{9E9ED4AC-6051-4325-A604-C224DD8CFF3B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/HomeController.cs">
+    <Files>
+      <File FileName="Views/Home/SignUp.cshtml" Line="24" Column="34" />
+      <File FileName="Views/Home/GroupForm.cshtml" Line="1" Column="1" />
+      <File FileName="Models/Appointment.cs" Line="1" Column="1" />
+      <File FileName="Controllers/HomeController.cs" Line="22" Column="22" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TempleTourProject" expanded="True">
+            <Node name="TempleTourProject" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.TempleTourProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
