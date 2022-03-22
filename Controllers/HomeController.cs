@@ -19,8 +19,8 @@ namespace TempleTourProject.Controllers
 
         public IActionResult SignUp()
         {
-            var times = from t in db.Tours.Include(t => t.AppointmentTime)
-                         select t;
+            //var times = from t in db.Tours.Include(t => t.AppointmentTime)
+            //             select t;
             return View();
         }
 

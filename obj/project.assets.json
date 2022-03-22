@@ -20,7 +20,7 @@
       "outputPath": "/Users/dannybellboy/Documents/GitHub/TempleTourProject/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/dannybellboy/.config/NuGet/NuGet.Config"
+        "/Users/dannybellboy/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

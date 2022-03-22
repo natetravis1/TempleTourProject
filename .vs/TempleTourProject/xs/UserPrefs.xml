@@ -1,23 +1,19 @@
 ﻿<Properties StartupConfiguration="{9E9ED4AC-6051-4325-A604-C224DD8CFF3B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/HomeController.cs">
-    <Files>
-      <File FileName="Views/Home/SignUp.cshtml" Line="24" Column="34" />
-      <File FileName="Views/Home/GroupForm.cshtml" Line="1" Column="1" />
-      <File FileName="Models/Appointment.cs" Line="1" Column="1" />
-      <File FileName="Controllers/HomeController.cs" Line="22" Column="22" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TempleTourProject" expanded="True">
             <Node name="TempleTourProject" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="HomeController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
               </Node>
+              <Node name="wwwroot" expanded="True" />
             </Node>
           </Node>
         </State>
