@@ -112,3 +112,13 @@ C:/Users/natet/OneDrive/Documents/BYU/1.9 IS 413/TempleTourProject/TempleTourPro
 /Users/dannybellboy/Documents/GitHub/TempleTourProject/obj/Debug/netcoreapp3.1/TempleTourProject.csproj.CopyComplete
 /Users/dannybellboy/Documents/GitHub/TempleTourProject/obj/Debug/netcoreapp3.1/Razor/Views/Home/Appointments.cshtml.g.cs
 /Users/dannybellboy/Documents/GitHub/TempleTourProject/obj/Debug/netcoreapp3.1/Razor/Views/Home/GroupForm.cshtml.g.cs
+C:\Users\murph\Source\Repos\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.csproj.AssemblyReference.cache
+C:\Users\murph\Source\Repos\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\murph\Source\Repos\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.AssemblyInfoInputs.cache
+C:\Users\murph\Source\Repos\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.AssemblyInfo.cs
+C:\Users\murph\Source\Repos\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.csproj.CoreCompileInputs.cache
+C:\Users\murph\Source\Repos\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\murph\Source\Repos\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.RazorAssemblyInfo.cache
+C:\Users\murph\Source\Repos\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.RazorAssemblyInfo.cs
+C:\Users\murph\Source\Repos\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.dll
+C:\Users\murph\Source\Repos\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.pdb
