@@ -13,7 +13,7 @@ namespace TempleTourProject.Models
             //Leave blank for now
         }
 
-        public DbSet<Appointment> newappointment { get; set; }
+        public DbSet<Appointment> Appointments { get; set; }
         public DbSet<Group> Groups { get; set; }
 
         //seed data
@@ -21,15 +21,16 @@ namespace TempleTourProject.Models
         {
             mb.Entity<Appointment>().HasData(
                 new Appointment { AppointmentId = 1, AppointmentTime = "8 AM"},
-                new Appointment { AppointmentId = 1, AppointmentTime = "9 AM" },
-                new Appointment { AppointmentId = 1, AppointmentTime = "10 AM" },
-                new Appointment { AppointmentId = 1, AppointmentTime = "11 AM" },
-                new Appointment { AppointmentId = 1, AppointmentTime = "12 AM" },
-                new Appointment { AppointmentId = 1, AppointmentTime = "1 PM" },
-                new Appointment { AppointmentId = 1, AppointmentTime = "2 PM" }
+                new Appointment { AppointmentId = 2, AppointmentTime = "9 AM" },
+                new Appointment { AppointmentId = 3, AppointmentTime = "10 AM" },
+                new Appointment { AppointmentId = 4, AppointmentTime = "11 AM" },
+                new Appointment { AppointmentId = 5, AppointmentTime = "12 AM" },
+                new Appointment { AppointmentId = 6, AppointmentTime = "1 PM" },
+                new Appointment { AppointmentId = 7, AppointmentTime = "2 PM" }
             );
             mb.Entity<Group>().HasData(
-                new  Group { 
+                new  Group {
+                    Date = "3/25/22",
                     GroupId = 1, 
                     AppointmentId = 1,
                     GroupName = "Sarah's Group",
@@ -39,6 +40,7 @@ namespace TempleTourProject.Models
                 },
                 new Group
                 {
+                    Date = "4/18/22",
                     GroupId = 2,
                     AppointmentId = 2,
                     GroupName = "Spencer's Group",

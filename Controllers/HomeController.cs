@@ -33,7 +33,7 @@ namespace TempleTourProject.Controllers
         [HttpGet]
         public IActionResult AddGroupForm()
         {
-
+           //have appointments time and date already loaded in
             return View();
         }
         [HttpPost]
@@ -42,13 +42,13 @@ namespace TempleTourProject.Controllers
             //check to make sure this works
             if (ModelState.IsValid)
             {
-                repo.CreateGroup(group);
-                repo.SaveGroup(group);
+                //repo.CreateGroup(group);
+                //repo.SaveGroup(group);
                 return View("Confirmation", group);
             }
             else
             {
-                ViewBag.Groups = repo.Groups.ToList();
+    
                 return View();
             }
         }
@@ -56,6 +56,7 @@ namespace TempleTourProject.Controllers
         //this is for viewing individual appointments
         public IActionResult ListGroups()
         {
+            //var groups = repo.Groups.ToList();
             return View();
         }
 

@@ -130,7 +130,6 @@ C:\Users\murph\Source\Repos\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTour
 C:\Users\murph\Source\Repos\TempleTourProject\obj\Debug\netcoreapp3.1\TempleTourProject.RazorCoreGenerate.cache
 C:\Users\murph\Source\Repos\TempleTourProject\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\murph\Source\Repos\TempleTourProject\obj\Debug\netcoreapp3.1\Razor\Views\Home\SignUp.cshtml.g.cs
-C:\Users\murph\Source\Repos\TempleTourProject\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\murph\Source\Repos\TempleTourProject\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\murph\Source\Repos\TempleTourProject\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\murph\Source\Repos\TempleTourProject\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs

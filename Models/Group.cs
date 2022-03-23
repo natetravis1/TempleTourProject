@@ -10,6 +10,7 @@ namespace TempleTourProject.Models
         [Required]
         public int GroupId { get; set; }
         [Required]
+        public string Date { get; set; }
         public string GroupName { get; set; }
         [Required]
         public int GroupSize { get; set; }

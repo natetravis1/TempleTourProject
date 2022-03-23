@@ -1,5 +1,34 @@
-﻿@{
-    ViewData["Title"] = "Appointments";
+﻿
+@{
 }
-@* this will serve as the listing of appointments *@
-<h1>View Appointments</h1>
+
+@model List<Group>
+
+<table class="table table-bordered table-dark table-striped">
+
+    <thead class="font-weight-bold">
+        <tr>
+            <td>Date</td>
+            <td>Name of Group</td>
+            <td>Size of Group</td>
+            <td>Email</td>
+            <td>Phone</td>
+            <td>Time</td>
+        </tr>
+    </thead>
+
+    @*<tbody>
+        @foreach (var x in Model)
+        {
+        <tr>
+            <td>@x.Date</td>
+            <td>@x.GroupName</td>
+            <td>@x.GroupSize</td>
+            <td>@x.Email</td>
+            <td>@x.Phone</td>
+            <td>@x.Appointment.AppointmentTime</td>
+        </tr>
+        }
+    </tbody>*@
+
+</table>
