@@ -12,11 +12,14 @@ namespace TempleTourProject.Controllers
     public class HomeController : Controller
     {
         private 
+        
+        //this is the home
         public IActionResult Index()
         {
             return View();
         }
 
+        //this is the options for choosing an appointment
         public IActionResult SignUp()
         {
             //var times = from t in db.Tours.Include(t => t.AppointmentTime)
@@ -24,14 +27,17 @@ namespace TempleTourProject.Controllers
             return View();
         }
 
+        //this is for adding an appointment
         public IActionResult GroupForm()
         {
             return View();
         }
 
+        //this is for viewing appointments
         public IActionResult Appointments()
         {
             return View();
         }
+
     }
 }
