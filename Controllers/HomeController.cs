@@ -11,7 +11,9 @@ namespace TempleTourProject.Controllers
 {
     public class HomeController : Controller
     {
-        private 
+        private ITempleRepository repo;
+
+        public HomeController(ITempleRepository temp) => repo = temp;
         
         //this is the home
         public IActionResult Index()
@@ -28,13 +30,13 @@ namespace TempleTourProject.Controllers
         }
 
         //this is for adding an appointment
-        public IActionResult GroupForm()
+        public IActionResult AddGroupForm()
         {
             return View();
         }
 
-        //this is for viewing appointments
-        public IActionResult Appointments()
+        //this is for viewing individual appointments
+        public IActionResult ListGroups()
         {
             return View();
         }
