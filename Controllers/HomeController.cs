@@ -22,41 +22,59 @@ namespace TempleTourProject.Controllers
         }
 
         //this is the options for choosing an appointment time and date
-        public IActionResult SignUp()
+ 
+        public IActionResult SignUp ()
         {
-            //var times = from t in db.Tours.Include(t => t.AppointmentTime)
-            //            select t;
-
-            //preload available appointments in from the seet data
+           
             var appointments = repo.Appointments
                 .ToList();
-                
-                repo.Appointments.ToList();
 
             return View(appointments);
         }
 
+        //[HttpPost]
+        //public IActionResult SignUp(int appointmentid)
+        //{
+        //    var x = repo.Appointments.Where(x => x.AppointmentId == appointmentid);
+        //    return View(x);
+        //}
+
         //this is for finalizing an appointment
         [HttpGet]
-        public IActionResult AddGroupForm(int timeId)
+        public IActionResult AddGroupForm(int TimeId)
         {
             //have appointments time and date already loaded in
-           
-            
-            return View(new TempleViewModel { 
-                Appointment = repo.Appointments.Single(t => t.AppointmentId == timeId),
-                Group = repo.Groups.Where(t => t.AppointmentId == timeId)
+            //var x = repo.Groups.Single(x => x.AppointmentId == timeId);
+
+
+            //var x = new TempleViewModel
+            //{
+            //    Group 
+            //    //Group = repo.Groups.Single(t => t.AppointmentId == TimeId)
+            //};
+
+            //var x = new TempleViewModel
+            //{
+            //    //Group = repo.Groups.Where(t => t.AppointmentId == TimeId),
+            //    Appointment = repo.Appointments.Single(t => t.AppointmentId == TimeId),
+            //    Group = new Group()
+            //};
+
+
+            return View(new TempleViewModel
+            {
+                Appointment = repo.Appointments.Single(t => t.AppointmentId == TimeId)
             });
         }
         [HttpPost]
-        public IActionResult AddGroupForm(Group group)
+        public IActionResult AddGroupForm(TempleViewModel tvm)
         {
             //check to make sure this works
             if (ModelState.IsValid)
             {
-                //repo.CreateGroup(group);
-                //repo.SaveGroup(group);
-                return View("Confirmation", group);
+                repo.CreateGroup(tvm.Group);
+                repo.SaveGroup(tvm.Group);
+                return View("Index");
             }
             else
             {
