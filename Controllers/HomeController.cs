@@ -15,13 +15,12 @@ namespace TempleTourProject.Controllers
 
         public HomeController(ITempleRepository temp) => repo = temp;
         
-        //this is the home
         public IActionResult Index()
         {
             return View();
         }
 
-        //this is the options for choosing an appointment
+        //this is the options for choosing an appointment time and date
         public IActionResult SignUp()
         {
             //var times = from t in db.Tours.Include(t => t.AppointmentTime)
@@ -29,7 +28,7 @@ namespace TempleTourProject.Controllers
             return View();
         }
 
-        //this is for adding an appointment
+        //this is for finalizing an appointment
         [HttpGet]
         public IActionResult AddGroupForm()
         {
@@ -53,7 +52,7 @@ namespace TempleTourProject.Controllers
             }
         }
 
-        //this is for viewing individual appointments
+        //this is for viewing individual appointments listed out in a table
         public IActionResult ListGroups()
         {
             //var groups = repo.Groups.ToList();
