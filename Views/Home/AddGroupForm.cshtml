@@ -2,18 +2,56 @@
     ViewData["Title"] = "Form";
 }
 
-@model Group
+@model TempleViewModel
 
 <h3>Add a group to the temple appointment list here.</h3>
 <p>[Enter required fields here]</p>
 
-<div>
+@*<div class="container ">
+    <div class="btn-group-lg">
+        @foreach (Appointment x in Model)
+        {
+            <form method="get" asp-controller="Home" asp-action="AddGroupForm">
+                <input type="hidden" name="TimeId" value="@x.AppointmentId" />
+                <button type="submit" class="btn btn-primary" style="width:1000px;">@x.AppointmentTime</button>
+            </form>
+            <br />
+        }
+    </div>
+</div>*@
+
+@foreach (Group x in Model.Group)
+{
+<form method="post">
+    <input type="hidden" name="TimeId" value="@x.Appointment.AppointmentId" />
+
+    <div asp-validation-summary="All"></div>
+
+    <label asp-for="@x.Appointment.AppointmentTime">AppointmentTime:</label>
+    <input asp-for="@x.Appointment.AppointmentTime" /><br />
+
+    <label asp-for="@x.GroupName">Name of Group:</label>
+    <input asp-for="@x.GroupName" /><br />
+
+    <label asp-for="@x.GroupSize">Size of Group (1-15):</label>
+    <input asp-for="@x.GroupSize" /><br />
+    <label asp-for="@x.Email">Email(xx@xx.com):</label>
+    <input asp-for="@x.Email" /><br />
+
+    <label asp-for="@x.Phone">Phone(xxx-xxx-xxxx):</label>
+    <input asp-for="@x.Phone" /><br />
+
+    <button type="submit">Submit</button>
+
+</form>
+} 
+
+@*<div>
     <form method="post">
 
         <div asp-validation-summary="All"></div>
-
-
-        <label asp-for="GroupName">Name of Group:</label>
+ 
+        <label asp-for="GroupName">Name of Group: @Model.Groups</label>
         <input asp-for="GroupName" /><br />
 
         <label asp-for="GroupSize">Size of Group (1-15):</label>
@@ -28,4 +66,4 @@
         <button type="submit">Submit</button>
 
     </form>
-</div>
+</div>*@

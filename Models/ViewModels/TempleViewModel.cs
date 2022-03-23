@@ -8,6 +8,6 @@ namespace TempleTourProject.Models.ViewModels
     public class TempleViewModel
     {
         public Appointment Appointment { get; set; }
-        public IQueryable<Group> Groups { get; set; }
+        public IQueryable<Group> Group { get; set; }
     }
 }

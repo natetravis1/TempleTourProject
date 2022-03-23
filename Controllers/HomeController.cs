@@ -27,7 +27,7 @@ namespace TempleTourProject.Controllers
             //var times = from t in db.Tours.Include(t => t.AppointmentTime)
             //            select t;
 
-            //preload available appointments in
+            //preload available appointments in from the seet data
             var appointments = repo.Appointments
                 .ToList();
                 
@@ -38,12 +38,15 @@ namespace TempleTourProject.Controllers
 
         //this is for finalizing an appointment
         [HttpGet]
-        public IActionResult AddGroupForm()
+        public IActionResult AddGroupForm(int timeId)
         {
             //have appointments time and date already loaded in
            
             
-            return View();
+            return View(new TempleViewModel { 
+                Appointment = repo.Appointments.Single(t => t.AppointmentId == timeId),
+                Group = repo.Groups.Where(t => t.AppointmentId == timeId)
+            });
         }
         [HttpPost]
         public IActionResult AddGroupForm(Group group)
