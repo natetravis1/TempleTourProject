@@ -30,9 +30,27 @@ namespace TempleTourProject.Controllers
         }
 
         //this is for adding an appointment
+        [HttpGet]
         public IActionResult AddGroupForm()
         {
+
             return View();
+        }
+        [HttpPost]
+        public IActionResult AddGroupForm(Group group)
+        {
+            //check to make sure this works
+            if (ModelState.IsValid)
+            {
+                repo.CreateGroup(group);
+                repo.SaveGroup(group);
+                return View("Confirmation", group);
+            }
+            else
+            {
+                ViewBag.Groups = repo.Groups.ToList();
+                return View();
+            }
         }
 
         //this is for viewing individual appointments
