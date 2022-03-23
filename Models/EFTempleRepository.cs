@@ -12,6 +12,7 @@ namespace TempleTourProject.Models
         public EFTempleRepository(TempleTourContext temp) => context = temp;
 
         public IQueryable<Group> Groups => context.Groups;
+        public IQueryable<Appointment> Appointments => context.Appointments;
 
         public void CreateGroup(Group g)
         {

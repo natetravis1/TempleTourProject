@@ -8,7 +8,7 @@ namespace TempleTourProject.Models
     public interface ITempleRepository
     {
         IQueryable<Group> Groups { get; }
-        //IQueryable<Appointment> Appointments { get; }
+        IQueryable<Appointment> Appointments { get; }
 
         public void SaveGroup(Group g);
         public void CreateGroup(Group g);

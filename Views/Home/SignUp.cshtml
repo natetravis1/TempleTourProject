@@ -2,7 +2,7 @@
     ViewData["Title"] = "Sign Up";
 }
 
-@model Appointment
+@model List<Appointment>
 
 <div class="text-center">
     <h1>Tour Sign Up</h1>
@@ -12,33 +12,35 @@
 
 <!--<table class="table-outlined">
     <tr>-->
-        @* we could implement a calendar to pick the date dynamically and store that to the session somehow - like the example *@
-        <!--<th>Monday</th>
-        <th>Tuesday</th>
-        <th>Wednesday</th>
-        <th>Thursday</th>
-        <th>Friday</th>
-        <th>Saturday</th>
-        <th>Sunday</th>
-    </tr>-->
-    @*<tr>
+@* we could implement a calendar to pick the date dynamically and store that to the session somehow - like the example *@
+<!--<th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+    <th>Saturday</th>
+    <th>Sunday</th>
+</tr>-->
+@*<tr>
         @foreach (var t in Model)
         {
             <td><button>@t.AppointmentTime</button></td>
         }
     </tr>*@
 <!--</table>-->
-<div class="container " >
+@* I want when they click one of these buttons that the time slot will get carried over into the addgroupform *@
+<div class="container ">
     <div class="btn-group-lg">
-        <a class="btn btn-primary" style="width:1000px;" asp-controller="Home" asp-action="AddGroupForm">8 AM</a><br />
-        <a class="btn btn-primary" style="width:1000px;" asp-controller="Home" asp-action="AddGroupForm">9 AM</a><br />
-        <a class="btn btn-primary" style="width:1000px;" asp-controller="Home" asp-action="AddGroupForm">10 AM</a><br />
-        <a class="btn btn-primary" style="width:1000px;" asp-controller="Home" asp-action="AddGroupForm">11 AM</a><br />
-        <a class="btn btn-primary" style="width:1000px;" asp-controller="Home" asp-action="AddGroupForm">12 AM</a><br />
-        <a class="btn btn-primary" style="width:1000px;" asp-controller="Home" asp-action="AddGroupForm">1 PM</a><br />
-        <a class="btn btn-primary" style="width:1000px;" asp-controller="Home" asp-action="AddGroupForm">2 PM</a><br />
-        <a class="btn btn-primary" style="width:1000px;" asp-controller="Home" asp-action="AddGroupForm">3 PM</a><br />
-        <a class="btn btn-primary" style="width:1000px;" asp-controller="Home" asp-action="AddGroupForm">4 PM</a><br />
-        <a class="btn btn-primary" style="width:1000px;" asp-controller="Home" asp-action="AddGroupForm">5 PM</a><br />
+        @foreach (Appointment x in Model)
+        {
+            <form method="get" asp-controller="Home" asp-action="AddGroupForm">
+                <input type="hidden" name="TimeId" value="@x.AppointmentId" />
+                <button type="submit" class="btn btn-primary" style="width:1000px;">@x.AppointmentTime</button>
+            </form>
+            <br />
+        }
     </div>
 </div>
+
+
+     

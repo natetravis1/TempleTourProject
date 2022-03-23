@@ -6,16 +6,12 @@
 
 <h3>Add a group to the temple appointment list here.</h3>
 <p>[Enter required fields here]</p>
+
 <div>
     <form method="post">
 
         <div asp-validation-summary="All"></div>
 
-        @*<label asp-for="AppointmentId">Appointment:</label>
-        <select asp-for="AppointmentId">
-            <option value="">Select an appointment time (need to change this based on the button they click)</option>
-            @foreach (Appointment a in ViewBag.Appointments)
-        </select><br />*@
 
         <label asp-for="GroupName">Name of Group:</label>
         <input asp-for="GroupName" /><br />

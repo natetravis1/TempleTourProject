@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using TempleTourProject.Models;
+using TempleTourProject.Models.ViewModels;
 
 namespace TempleTourProject.Controllers
 {
@@ -24,15 +25,24 @@ namespace TempleTourProject.Controllers
         public IActionResult SignUp()
         {
             //var times = from t in db.Tours.Include(t => t.AppointmentTime)
-            //             select t;
-            return View();
+            //            select t;
+
+            //preload available appointments in
+            var appointments = repo.Appointments
+                .ToList();
+                
+                repo.Appointments.ToList();
+
+            return View(appointments);
         }
 
         //this is for finalizing an appointment
         [HttpGet]
         public IActionResult AddGroupForm()
         {
-           //have appointments time and date already loaded in
+            //have appointments time and date already loaded in
+           
+            
             return View();
         }
         [HttpPost]
