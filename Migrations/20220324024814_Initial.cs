@@ -12,7 +12,8 @@ namespace TempleTourProject.Migrations
                 {
                     AppointmentId = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    AppointmentTime = table.Column<string>(nullable: true)
+                    AppointmentTime = table.Column<string>(nullable: true),
+                    Taken = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -25,8 +26,8 @@ namespace TempleTourProject.Migrations
                 {
                     GroupId = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Date = table.Column<string>(nullable: false),
-                    GroupName = table.Column<string>(nullable: true),
+                    Date = table.Column<string>(nullable: true),
+                    GroupName = table.Column<string>(nullable: false),
                     GroupSize = table.Column<int>(nullable: false),
                     Email = table.Column<string>(nullable: false),
                     Phone = table.Column<string>(nullable: true),
@@ -35,48 +36,42 @@ namespace TempleTourProject.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Groups", x => x.GroupId);
-                    table.ForeignKey(
-                        name: "FK_Groups_Appointments_AppointmentId",
-                        column: x => x.AppointmentId,
-                        principalTable: "Appointments",
-                        principalColumn: "AppointmentId",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.InsertData(
                 table: "Appointments",
-                columns: new[] { "AppointmentId", "AppointmentTime" },
-                values: new object[] { 1, "8 AM" });
+                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
+                values: new object[] { 1, "8 AM", false });
 
             migrationBuilder.InsertData(
                 table: "Appointments",
-                columns: new[] { "AppointmentId", "AppointmentTime" },
-                values: new object[] { 2, "9 AM" });
+                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
+                values: new object[] { 2, "9 AM", false });
 
             migrationBuilder.InsertData(
                 table: "Appointments",
-                columns: new[] { "AppointmentId", "AppointmentTime" },
-                values: new object[] { 3, "10 AM" });
+                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
+                values: new object[] { 3, "10 AM", false });
 
             migrationBuilder.InsertData(
                 table: "Appointments",
-                columns: new[] { "AppointmentId", "AppointmentTime" },
-                values: new object[] { 4, "11 AM" });
+                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
+                values: new object[] { 4, "11 AM", false });
 
             migrationBuilder.InsertData(
                 table: "Appointments",
-                columns: new[] { "AppointmentId", "AppointmentTime" },
-                values: new object[] { 5, "12 AM" });
+                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
+                values: new object[] { 5, "12 AM", false });
 
             migrationBuilder.InsertData(
                 table: "Appointments",
-                columns: new[] { "AppointmentId", "AppointmentTime" },
-                values: new object[] { 6, "1 PM" });
+                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
+                values: new object[] { 6, "1 PM", false });
 
             migrationBuilder.InsertData(
                 table: "Appointments",
-                columns: new[] { "AppointmentId", "AppointmentTime" },
-                values: new object[] { 7, "2 PM" });
+                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
+                values: new object[] { 7, "2 PM", false });
 
             migrationBuilder.InsertData(
                 table: "Groups",
@@ -87,20 +82,15 @@ namespace TempleTourProject.Migrations
                 table: "Groups",
                 columns: new[] { "GroupId", "AppointmentId", "Date", "Email", "GroupName", "GroupSize", "Phone" },
                 values: new object[] { 2, 2, "4/18/22", "profhilton@gmail.com", "Spencer's Group", 8, "385-789-6932" });
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Groups_AppointmentId",
-                table: "Groups",
-                column: "AppointmentId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Groups");
+                name: "Appointments");
 
             migrationBuilder.DropTable(
-                name: "Appointments");
+                name: "Groups");
         }
     }
 }

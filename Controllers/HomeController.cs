@@ -27,6 +27,7 @@ namespace TempleTourProject.Controllers
         {
            
             var appointments = repo.Appointments
+                
                 .ToList();
 
             return View(appointments);
@@ -49,22 +50,34 @@ namespace TempleTourProject.Controllers
             //check to make sure this works
             if (ModelState.IsValid)
             {
-                //var apptime = repo.Appointments.Single(t => t.AppointmentId);
-                //repo.Appointments.FirstOrDefault(t => t.AppointmentId == TimeId);
-                tvm.Group.AppointmentId = TimeId;
-                //tvm.Group.Appointment = tvm.Appointment;
 
-                repo.CreateGroup(tvm.Group);
-                repo.SaveGroup(tvm.Group);
+            
+                if (tvm.Appointment.Taken == false)
+                {
+                        //var apptime = repo.Appointments.Single(t => t.AppointmentId);
+                        //repo.Appointments.FirstOrDefault(t => t.AppointmentId == TimeId);
+                        tvm.Group.AppointmentId = TimeId;
+                        //tvm.Group.Appointment = tvm.Appointment;
+                        tvm.Appointment.Taken = true;
+                        var app = repo.Appointments.Single(t => t.AppointmentId == TimeId);
+                        app.Taken = true;
 
-                
-                return RedirectToAction("Index");
+                        repo.CreateGroup(tvm.Group);
+                        repo.SaveGroup(tvm.Group);
+                       
+
+                    //if taken then block that app
+
+
+
+
+                    return RedirectToAction("Index");
+                } 
             }
-            else
-            {
+            
     
-                return View(tvm);
-            }
+            return View(tvm);
+            
         }
 
         //this is for viewing individual appointments listed out in a table

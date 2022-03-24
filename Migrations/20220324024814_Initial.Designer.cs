@@ -8,7 +8,7 @@ using TempleTourProject.Models;
 namespace TempleTourProject.Migrations
 {
     [DbContext(typeof(TempleTourContext))]
-    [Migration("20220323181023_Initial")]
+    [Migration("20220324024814_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -26,6 +26,9 @@ namespace TempleTourProject.Migrations
                     b.Property<string>("AppointmentTime")
                         .HasColumnType("TEXT");
 
+                    b.Property<bool>("Taken")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("AppointmentId");
 
                     b.ToTable("Appointments");
@@ -34,37 +37,44 @@ namespace TempleTourProject.Migrations
                         new
                         {
                             AppointmentId = 1,
-                            AppointmentTime = "8 AM"
+                            AppointmentTime = "8 AM",
+                            Taken = false
                         },
                         new
                         {
                             AppointmentId = 2,
-                            AppointmentTime = "9 AM"
+                            AppointmentTime = "9 AM",
+                            Taken = false
                         },
                         new
                         {
                             AppointmentId = 3,
-                            AppointmentTime = "10 AM"
+                            AppointmentTime = "10 AM",
+                            Taken = false
                         },
                         new
                         {
                             AppointmentId = 4,
-                            AppointmentTime = "11 AM"
+                            AppointmentTime = "11 AM",
+                            Taken = false
                         },
                         new
                         {
                             AppointmentId = 5,
-                            AppointmentTime = "12 AM"
+                            AppointmentTime = "12 AM",
+                            Taken = false
                         },
                         new
                         {
                             AppointmentId = 6,
-                            AppointmentTime = "1 PM"
+                            AppointmentTime = "1 PM",
+                            Taken = false
                         },
                         new
                         {
                             AppointmentId = 7,
-                            AppointmentTime = "2 PM"
+                            AppointmentTime = "2 PM",
+                            Taken = false
                         });
                 });
 
@@ -78,7 +88,6 @@ namespace TempleTourProject.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Date")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Email")
@@ -86,6 +95,7 @@ namespace TempleTourProject.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("GroupName")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<int>("GroupSize")
@@ -95,8 +105,6 @@ namespace TempleTourProject.Migrations
                         .HasColumnType("TEXT");
 
                     b.HasKey("GroupId");
-
-                    b.HasIndex("AppointmentId");
 
                     b.ToTable("Groups");
 
@@ -121,15 +129,6 @@ namespace TempleTourProject.Migrations
                             GroupSize = 8,
                             Phone = "385-789-6932"
                         });
-                });
-
-            modelBuilder.Entity("TempleTourProject.Models.Group", b =>
-                {
-                    b.HasOne("TempleTourProject.Models.Appointment", "Appointment")
-                        .WithMany()
-                        .HasForeignKey("AppointmentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

@@ -26,6 +26,7 @@ namespace TempleTourProject.Models
             context.SaveChanges();
         }
 
+
         public void SaveGroup(Group g)
         {
             context.SaveChanges();
