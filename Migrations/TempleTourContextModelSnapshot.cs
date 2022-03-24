@@ -121,6 +121,9 @@ namespace TempleTourProject.Migrations
                     b.Property<int>("AppointmentId")
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("AppointmentTime")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Date")
                         .HasColumnType("TEXT");
 

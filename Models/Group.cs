@@ -21,5 +21,6 @@ namespace TempleTourProject.Models
 
         //foreign key relationship
         public int AppointmentId { get; set; }
+        public string AppointmentTime { get; set; }
     }
 }

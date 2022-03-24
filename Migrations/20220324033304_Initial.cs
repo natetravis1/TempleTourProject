@@ -31,7 +31,8 @@ namespace TempleTourProject.Migrations
                     GroupSize = table.Column<int>(nullable: false),
                     Email = table.Column<string>(nullable: false),
                     Phone = table.Column<string>(nullable: true),
-                    AppointmentId = table.Column<int>(nullable: false)
+                    AppointmentId = table.Column<int>(nullable: false),
+                    AppointmentTime = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -105,13 +106,13 @@ namespace TempleTourProject.Migrations
 
             migrationBuilder.InsertData(
                 table: "Groups",
-                columns: new[] { "GroupId", "AppointmentId", "Date", "Email", "GroupName", "GroupSize", "Phone" },
-                values: new object[] { 1, 1, "3/25/22", "sarahlolmstead999@gmail.com", "Sarah's Group", 2, "801-435-1276" });
+                columns: new[] { "GroupId", "AppointmentId", "AppointmentTime", "Date", "Email", "GroupName", "GroupSize", "Phone" },
+                values: new object[] { 1, 1, null, "3/25/22", "sarahlolmstead999@gmail.com", "Sarah's Group", 2, "801-435-1276" });
 
             migrationBuilder.InsertData(
                 table: "Groups",
-                columns: new[] { "GroupId", "AppointmentId", "Date", "Email", "GroupName", "GroupSize", "Phone" },
-                values: new object[] { 2, 2, "4/18/22", "profhilton@gmail.com", "Spencer's Group", 8, "385-789-6932" });
+                columns: new[] { "GroupId", "AppointmentId", "AppointmentTime", "Date", "Email", "GroupName", "GroupSize", "Phone" },
+                values: new object[] { 2, 2, null, "4/18/22", "profhilton@gmail.com", "Spencer's Group", 8, "385-789-6932" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

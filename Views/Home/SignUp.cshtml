@@ -37,6 +37,7 @@
             {
                 <form method="get" asp-controller="Home" asp-action="AddGroupForm">
                     <input type="hidden" value="@x.AppointmentId" name="TimeId" />
+                    <input type="hidden" value="@x.AppointmentTime" name="Time" />
                     <button type="submit" class="btn btn-primary" style="width:1000px;">@x.AppointmentTime</button>
                 </form>
                 <br />

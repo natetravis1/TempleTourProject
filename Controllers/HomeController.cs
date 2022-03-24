@@ -35,47 +35,39 @@ namespace TempleTourProject.Controllers
 
         //this is for finalizing an appointment
         [HttpGet]
-        public IActionResult AddGroupForm(int TimeId)
+        public IActionResult AddGroupForm(int TimeId, string Time)
         {
             //have appointments time and date already loaded in
 
             return View(new TempleViewModel
             {
-                Appointment = repo.Appointments.Single(t => t.AppointmentId == TimeId)
+                Appointment = repo.Appointments.Single(t => t.AppointmentId == TimeId && t.AppointmentTime == Time)
             });
         }
         [HttpPost]
-        public IActionResult AddGroupForm(TempleViewModel tvm, int TimeId)
+        public IActionResult AddGroupForm(TempleViewModel tvm, int TimeId, string Time)
         {
             //check to make sure this works
             if (ModelState.IsValid)
             {
 
-            
                 if (tvm.Appointment.Taken == false)
                 {
-                        //var apptime = repo.Appointments.Single(t => t.AppointmentId);
-                        //repo.Appointments.FirstOrDefault(t => t.AppointmentId == TimeId);
-                        tvm.Group.AppointmentId = TimeId;
-                        //tvm.Group.Appointment = tvm.Appointment;
-                        tvm.Appointment.Taken = true;
-                        var app = repo.Appointments.Single(t => t.AppointmentId == TimeId);
-                        app.Taken = true;
 
-                        repo.CreateGroup(tvm.Group);
-                        repo.SaveGroup(tvm.Group);
-                       
+                    tvm.Group.AppointmentId = TimeId;
+                    tvm.Group.AppointmentTime = Time;
+     
+                    tvm.Appointment.Taken = true;
+                    var app = repo.Appointments.Single(t => t.AppointmentId == TimeId && t.AppointmentTime == Time);
+                    app.Taken = true;
 
-                    //if taken then block that app
-
-
-
-
+                    repo.CreateGroup(tvm.Group);
+                    repo.SaveGroup(tvm.Group);
+          
                     return RedirectToAction("Index");
                 } 
             }
             
-    
             return View(tvm);
             
         }
@@ -83,8 +75,9 @@ namespace TempleTourProject.Controllers
         //this is for viewing individual appointments listed out in a table
         public IActionResult ListGroups()
         {
-            //var groups = repo.Groups.ToList();
-            return View();
+            var groups = repo.Groups
+                .ToList();
+            return View(groups);
         }
 
     }

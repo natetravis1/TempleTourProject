@@ -17,7 +17,7 @@
         </tr>
     </thead>
 
-    @*<tbody>
+    <tbody>
         @foreach (var x in Model)
         {
         <tr>
@@ -26,9 +26,9 @@
             <td>@x.GroupSize</td>
             <td>@x.Email</td>
             <td>@x.Phone</td>
-            <td>@x.Appointment.AppointmentTime</td>
+            <td>@x.AppointmentTime</td>
         </tr>
         }
-    </tbody>*@
+    </tbody>
 
 </table>
