@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Form";
+}
+
+@model Group
+
+<h3>Add a group to the temple appointment list here.</h3>
+<p>[Enter required fields here]</p>
+
+    <div>
+        <form method="post">
+
+            <div asp-validation-summary="All"></div>
+
+            <label asp-for="@Model.AppointmentTime">Appointment Time:</label>
+            <input asp-for="@Model.AppointmentTime" value="@Model.AppointmentTime" /><br />
+
+            <label asp-for="@Model.AppointmentId">Appointment Id: </label>
+            <input asp-for="@Model.AppointmentId" value="@Model.AppointmentId" /><br />
+
+            <label asp-for="@Model.Date">Appointment Date:</label>
+            <input asp-for="@Model.Date" value="@Model.Date"/><br />
+
+            <label asp-for="@Model.GroupName">Name of Group:</label>
+            <input asp-for="@Model.GroupName" value="@Model.GroupName"/><br />
+
+            <label asp-for="@Model.GroupSize">Size of Group (1-15):</label>
+            <input asp-for="@Model.GroupSize" value="@Model.GroupSize"/><br />
+
+            <label asp-for="@Model.Email">Email(xx@xx.com):</label>
+            <input asp-for="@Model.Email" value="@Model.Email"/><br />
+
+            <label asp-for="@Model.Phone">Phone(xxx-xxx-xxxx):</label>
+            <input asp-for="@Model.Phone" value="@Model.Phone"/><br />
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
+
+<a class="btn btn-outline-secondary" asp-action="Index">Go back to home</a>

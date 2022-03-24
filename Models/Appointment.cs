@@ -10,5 +10,6 @@ namespace TempleTourProject.Models
         public int AppointmentId { get; set; }
         public string AppointmentTime { get; set; }
         public bool Taken { get; set; }
+        public string Date { get; set; }
     }
 }

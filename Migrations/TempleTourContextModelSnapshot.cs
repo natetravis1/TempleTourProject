@@ -24,6 +24,9 @@ namespace TempleTourProject.Migrations
                     b.Property<string>("AppointmentTime")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Date")
+                        .HasColumnType("TEXT");
+
                     b.Property<bool>("Taken")
                         .HasColumnType("INTEGER");
 

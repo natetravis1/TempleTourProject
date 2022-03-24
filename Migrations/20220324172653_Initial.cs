@@ -13,7 +13,8 @@ namespace TempleTourProject.Migrations
                     AppointmentId = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     AppointmentTime = table.Column<string>(nullable: true),
-                    Taken = table.Column<bool>(nullable: false)
+                    Taken = table.Column<bool>(nullable: false),
+                    Date = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -41,68 +42,68 @@ namespace TempleTourProject.Migrations
 
             migrationBuilder.InsertData(
                 table: "Appointments",
-                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
-                values: new object[] { 1, "8 AM", false });
+                columns: new[] { "AppointmentId", "AppointmentTime", "Date", "Taken" },
+                values: new object[] { 1, "8 AM", null, false });
 
             migrationBuilder.InsertData(
                 table: "Appointments",
-                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
-                values: new object[] { 2, "9 AM", false });
+                columns: new[] { "AppointmentId", "AppointmentTime", "Date", "Taken" },
+                values: new object[] { 2, "9 AM", null, false });
 
             migrationBuilder.InsertData(
                 table: "Appointments",
-                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
-                values: new object[] { 3, "10 AM", false });
+                columns: new[] { "AppointmentId", "AppointmentTime", "Date", "Taken" },
+                values: new object[] { 3, "10 AM", null, false });
 
             migrationBuilder.InsertData(
                 table: "Appointments",
-                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
-                values: new object[] { 4, "11 AM", false });
+                columns: new[] { "AppointmentId", "AppointmentTime", "Date", "Taken" },
+                values: new object[] { 4, "11 AM", null, false });
 
             migrationBuilder.InsertData(
                 table: "Appointments",
-                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
-                values: new object[] { 5, "12 AM", false });
+                columns: new[] { "AppointmentId", "AppointmentTime", "Date", "Taken" },
+                values: new object[] { 5, "12 AM", null, false });
 
             migrationBuilder.InsertData(
                 table: "Appointments",
-                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
-                values: new object[] { 6, "1 PM", false });
+                columns: new[] { "AppointmentId", "AppointmentTime", "Date", "Taken" },
+                values: new object[] { 6, "1 PM", null, false });
 
             migrationBuilder.InsertData(
                 table: "Appointments",
-                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
-                values: new object[] { 7, "2 PM", false });
+                columns: new[] { "AppointmentId", "AppointmentTime", "Date", "Taken" },
+                values: new object[] { 7, "2 PM", null, false });
 
             migrationBuilder.InsertData(
                 table: "Appointments",
-                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
-                values: new object[] { 8, "3 PM", false });
+                columns: new[] { "AppointmentId", "AppointmentTime", "Date", "Taken" },
+                values: new object[] { 8, "3 PM", null, false });
 
             migrationBuilder.InsertData(
                 table: "Appointments",
-                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
-                values: new object[] { 9, "4 PM", false });
+                columns: new[] { "AppointmentId", "AppointmentTime", "Date", "Taken" },
+                values: new object[] { 9, "4 PM", null, false });
 
             migrationBuilder.InsertData(
                 table: "Appointments",
-                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
-                values: new object[] { 10, "5 PM", false });
+                columns: new[] { "AppointmentId", "AppointmentTime", "Date", "Taken" },
+                values: new object[] { 10, "5 PM", null, false });
 
             migrationBuilder.InsertData(
                 table: "Appointments",
-                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
-                values: new object[] { 11, "6 PM", false });
+                columns: new[] { "AppointmentId", "AppointmentTime", "Date", "Taken" },
+                values: new object[] { 11, "6 PM", null, false });
 
             migrationBuilder.InsertData(
                 table: "Appointments",
-                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
-                values: new object[] { 12, "7 PM", false });
+                columns: new[] { "AppointmentId", "AppointmentTime", "Date", "Taken" },
+                values: new object[] { 12, "7 PM", null, false });
 
             migrationBuilder.InsertData(
                 table: "Appointments",
-                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
-                values: new object[] { 13, "8 PM", false });
+                columns: new[] { "AppointmentId", "AppointmentTime", "Date", "Taken" },
+                values: new object[] { 13, "8 PM", null, false });
 
             migrationBuilder.InsertData(
                 table: "Groups",

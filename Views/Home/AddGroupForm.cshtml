@@ -10,42 +10,41 @@
 @if (Model.Appointment.Taken == false)
 {
 
+    <div>
+        <form method="post">
 
-<div>
-    <form method="post">
+            <div asp-validation-summary="All"></div>
 
-        <div asp-validation-summary="All"></div>
+            <input type="hidden" asp-for="@Model.Appointment" name="Appointment" value="@Model.Appointment" />
 
-        <input type="hidden" asp-for="@Model.Appointment" name="Appointment" value="@Model.Appointment" />
+            @*<label asp-for="@Model.Appointment.Taken" >Taken?</label>
+            <input asp-for="@Model.Appointment.Taken" value="@Model.Appointment.Taken"/>*@
 
-        @*<label asp-for="@Model.Appointment.Taken" >Taken?</label>
-        <input asp-for="@Model.Appointment.Taken" value="@Model.Appointment.Taken"/>*@
+            <label asp-for="@Model.Appointment.AppointmentTime">Appointment Time:</label>
+            <input asp-for="@Model.Appointment.AppointmentTime" value="@Model.Appointment.AppointmentTime" readonly /><br />
 
-        <label asp-for="@Model.Appointment.AppointmentTime">Appointment Time:</label>
-        <input asp-for="@Model.Appointment.AppointmentTime" value="@Model.Appointment.AppointmentTime" readonly /><br />
+            <label asp-for="@Model.Appointment.AppointmentId">Appointment Id: </label>
+            <input asp-for="@Model.Appointment.AppointmentId" value="@Model.Appointment.AppointmentId" readonly /><br />
 
-        <label asp-for="@Model.Appointment.AppointmentId">Appointment Id: </label>
-        <input asp-for="@Model.Appointment.AppointmentId" value="@Model.Appointment.AppointmentId" readonly /><br />
+            <label asp-for="@Model.Group.Date">Appointment Date:</label>
+            <input asp-for="@Model.Group.Date" /><br />
 
-        <label asp-for="@Model.Group.Date">Appointment Date:</label>
-        <input asp-for="@Model.Group.Date" /><br />
+            <label asp-for="@Model.Group.GroupName">Name of Group:</label>
+            <input asp-for="@Model.Group.GroupName" /><br />
 
-        <label asp-for="@Model.Group.GroupName">Name of Group:</label>
-        <input asp-for="@Model.Group.GroupName" /><br />
+            <label asp-for="@Model.Group.GroupSize">Size of Group (1-15):</label>
+            <input asp-for="@Model.Group.GroupSize" /><br />
 
-        <label asp-for="@Model.Group.GroupSize">Size of Group (1-15):</label>
-        <input asp-for="@Model.Group.GroupSize" /><br />
+            <label asp-for="@Model.Group.Email">Email(xx@xx.com):</label>
+            <input asp-for="@Model.Group.Email" /><br />
 
-        <label asp-for="@Model.Group.Email">Email(xx@xx.com):</label>
-        <input asp-for="@Model.Group.Email" /><br />
+            <label asp-for="@Model.Group.Phone">Phone(xxx-xxx-xxxx):</label>
+            <input asp-for="@Model.Group.Phone" /><br />
 
-        <label asp-for="@Model.Group.Phone">Phone(xxx-xxx-xxxx):</label>
-        <input asp-for="@Model.Group.Phone" /><br />
+            <button type="submit">Submit</button>
 
-        <button type="submit">Submit</button>
-
-    </form>
-</div>
+        </form>
+    </div>
 }
 else
 {

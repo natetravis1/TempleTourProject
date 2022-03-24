@@ -88,7 +88,7 @@ namespace TempleTourProject.Controllers
         {
             var group = repo.Groups.Single(x => x.GroupId == groupid);
 
-            return View("AddGroupForm", group);
+            return View("Edit", group);
         }
 
         [HttpGet]
