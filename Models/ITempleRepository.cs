@@ -14,6 +14,7 @@ namespace TempleTourProject.Models
         public void CreateGroup(Group g);
         public void DeleteGroup(Group g);
 
+        public void UpdateGroup(Group g);
        
     }
 }

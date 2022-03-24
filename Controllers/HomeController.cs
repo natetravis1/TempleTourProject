@@ -91,6 +91,14 @@ namespace TempleTourProject.Controllers
             return View("Edit", group);
         }
 
+        [HttpPost]
+        public IActionResult Edit(Group g)
+        {
+            repo.UpdateGroup(g);
+            repo.SaveGroup(g);
+            return RedirectToAction("ListGroups");
+        }
+
         [HttpGet]
         public IActionResult Delete (int groupid)
         {

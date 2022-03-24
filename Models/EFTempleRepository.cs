@@ -31,5 +31,11 @@ namespace TempleTourProject.Models
         {
             context.SaveChanges();
         }
+
+        public void UpdateGroup(Group g)
+        {
+            context.Update(g);
+            context.SaveChanges();
+        }
     }
 }
