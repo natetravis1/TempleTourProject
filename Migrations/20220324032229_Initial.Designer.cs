@@ -8,7 +8,7 @@ using TempleTourProject.Models;
 namespace TempleTourProject.Migrations
 {
     [DbContext(typeof(TempleTourContext))]
-    [Migration("20220324024814_Initial")]
+    [Migration("20220324032229_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -74,6 +74,42 @@ namespace TempleTourProject.Migrations
                         {
                             AppointmentId = 7,
                             AppointmentTime = "2 PM",
+                            Taken = false
+                        },
+                        new
+                        {
+                            AppointmentId = 8,
+                            AppointmentTime = "3 PM",
+                            Taken = false
+                        },
+                        new
+                        {
+                            AppointmentId = 9,
+                            AppointmentTime = "4 PM",
+                            Taken = false
+                        },
+                        new
+                        {
+                            AppointmentId = 10,
+                            AppointmentTime = "5 PM",
+                            Taken = false
+                        },
+                        new
+                        {
+                            AppointmentId = 11,
+                            AppointmentTime = "6 PM",
+                            Taken = false
+                        },
+                        new
+                        {
+                            AppointmentId = 12,
+                            AppointmentTime = "7 PM",
+                            Taken = false
+                        },
+                        new
+                        {
+                            AppointmentId = 13,
+                            AppointmentTime = "8 PM",
                             Taken = false
                         });
                 });

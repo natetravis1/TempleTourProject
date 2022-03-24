@@ -74,6 +74,36 @@ namespace TempleTourProject.Migrations
                 values: new object[] { 7, "2 PM", false });
 
             migrationBuilder.InsertData(
+                table: "Appointments",
+                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
+                values: new object[] { 8, "3 PM", false });
+
+            migrationBuilder.InsertData(
+                table: "Appointments",
+                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
+                values: new object[] { 9, "4 PM", false });
+
+            migrationBuilder.InsertData(
+                table: "Appointments",
+                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
+                values: new object[] { 10, "5 PM", false });
+
+            migrationBuilder.InsertData(
+                table: "Appointments",
+                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
+                values: new object[] { 11, "6 PM", false });
+
+            migrationBuilder.InsertData(
+                table: "Appointments",
+                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
+                values: new object[] { 12, "7 PM", false });
+
+            migrationBuilder.InsertData(
+                table: "Appointments",
+                columns: new[] { "AppointmentId", "AppointmentTime", "Taken" },
+                values: new object[] { 13, "8 PM", false });
+
+            migrationBuilder.InsertData(
                 table: "Groups",
                 columns: new[] { "GroupId", "AppointmentId", "Date", "Email", "GroupName", "GroupSize", "Phone" },
                 values: new object[] { 1, 1, "3/25/22", "sarahlolmstead999@gmail.com", "Sarah's Group", 2, "801-435-1276" });

@@ -26,7 +26,13 @@ namespace TempleTourProject.Models
                 new Appointment { AppointmentId = 4, AppointmentTime = "11 AM" },
                 new Appointment { AppointmentId = 5, AppointmentTime = "12 AM" },
                 new Appointment { AppointmentId = 6, AppointmentTime = "1 PM" },
-                new Appointment { AppointmentId = 7, AppointmentTime = "2 PM" }
+                new Appointment { AppointmentId = 7, AppointmentTime = "2 PM" },
+                new Appointment { AppointmentId = 8, AppointmentTime = "3 PM" },
+                new Appointment { AppointmentId = 9, AppointmentTime = "4 PM" },
+                new Appointment { AppointmentId = 10, AppointmentTime = "5 PM" },
+                new Appointment { AppointmentId = 11, AppointmentTime = "6 PM" },
+                new Appointment { AppointmentId = 12, AppointmentTime = "7 PM" },
+                new Appointment { AppointmentId = 13, AppointmentTime = "8 PM" }
             );
             mb.Entity<Group>().HasData(
                 new  Group {
