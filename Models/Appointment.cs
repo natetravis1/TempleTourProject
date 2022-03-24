@@ -7,7 +7,6 @@ namespace TempleTourProject.Models
     public class Appointment
     {
         [Key]
-        [Required]
         public int AppointmentId { get; set; }
         public string AppointmentTime { get; set; }
     }

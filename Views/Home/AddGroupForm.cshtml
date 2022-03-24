@@ -56,7 +56,7 @@
         <input type="hidden" asp-for="@Model.Appointment.AppointmentId" value="@Model.Appointment.AppointmentTime" />
         <input type="hidden" name="timeId" value="@Model.Appointment.AppointmentId" />*@
 
-        <input type="hidden" name="AppointmentId" value="@Model.Appointment.AppointmentTime" />
+        <input type="hidden" asp-for="@Model.Appointment" name="Appointment" value="@Model.Appointment" />
 
         <label asp-for="@Model.Appointment.AppointmentTime">Appointment Time:</label>
         <input asp-for="@Model.Appointment.AppointmentTime" value="@Model.Appointment.AppointmentTime" /><br />
@@ -64,17 +64,20 @@
         <label asp-for="@Model.Appointment.AppointmentId">Appointment Id: </label>
         <input asp-for="@Model.Appointment.AppointmentId" value="@Model.Appointment.AppointmentId" /><br />
 
+        <label asp-for="@Model.Group.Date">Appointment Date:</label>
+        <input asp-for="@Model.Group.Date" /><br />
+
         <label asp-for="@Model.Group.GroupName">Name of Group:</label>
         <input asp-for="@Model.Group.GroupName" /><br />
 
-        @*<label asp-for="GroupSize">Size of Group (1-15):</label>
-        <input asp-for="GroupSize" /><br />
+        <label asp-for="@Model.Group.GroupSize">Size of Group (1-15):</label>
+        <input asp-for="@Model.Group.GroupSize"  /><br />
 
-        <label asp-for="Email">Email(xx@xx.com):</label>
-        <input asp-for="Email" /><br />
+        <label asp-for="@Model.Group.Email">Email(xx@xx.com):</label>
+        <input asp-for="@Model.Group.Email"  /><br />
 
-        <label asp-for="Phone">Phone(xxx-xxx-xxxx):</label>
-        <input asp-for="Phone" /><br />*@
+        <label asp-for="@Model.Group.Phone">Phone(xxx-xxx-xxxx):</label>
+        <input asp-for="@Model.Group.Phone"  /><br />
 
         <button type="submit">Submit</button>
 

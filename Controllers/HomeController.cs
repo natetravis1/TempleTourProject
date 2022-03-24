@@ -32,34 +32,11 @@ namespace TempleTourProject.Controllers
             return View(appointments);
         }
 
-        //[HttpPost]
-        //public IActionResult SignUp(int appointmentid)
-        //{
-        //    var x = repo.Appointments.Where(x => x.AppointmentId == appointmentid);
-        //    return View(x);
-        //}
-
         //this is for finalizing an appointment
         [HttpGet]
         public IActionResult AddGroupForm(int TimeId)
         {
             //have appointments time and date already loaded in
-            //var x = repo.Groups.Single(x => x.AppointmentId == timeId);
-
-
-            //var x = new TempleViewModel
-            //{
-            //    Group 
-            //    //Group = repo.Groups.Single(t => t.AppointmentId == TimeId)
-            //};
-
-            //var x = new TempleViewModel
-            //{
-            //    //Group = repo.Groups.Where(t => t.AppointmentId == TimeId),
-            //    Appointment = repo.Appointments.Single(t => t.AppointmentId == TimeId),
-            //    Group = new Group()
-            //};
-
 
             return View(new TempleViewModel
             {
@@ -67,19 +44,26 @@ namespace TempleTourProject.Controllers
             });
         }
         [HttpPost]
-        public IActionResult AddGroupForm(TempleViewModel tvm)
+        public IActionResult AddGroupForm(TempleViewModel tvm, int TimeId)
         {
             //check to make sure this works
             if (ModelState.IsValid)
             {
+                //var apptime = repo.Appointments.Single(t => t.AppointmentId);
+                //repo.Appointments.FirstOrDefault(t => t.AppointmentId == TimeId);
+                tvm.Group.AppointmentId = TimeId;
+                //tvm.Group.Appointment = tvm.Appointment;
+
                 repo.CreateGroup(tvm.Group);
                 repo.SaveGroup(tvm.Group);
-                return View("Index");
+
+                
+                return RedirectToAction("Index");
             }
             else
             {
     
-                return View();
+                return View(tvm);
             }
         }
 
