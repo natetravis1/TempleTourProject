@@ -192,3 +192,4 @@ C:\Users\murph\Source\Repos\TempleTourProject\bin\Debug\netcoreapp3.1\runtimes\w
 C:\Users\murph\Source\Repos\TempleTourProject\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\murph\Source\Repos\TempleTourProject\obj\Debug\netcoreapp3.1\Razor\Views\Home\AddGroupForm.cshtml.g.cs
 C:\Users\murph\Source\Repos\TempleTourProject\obj\Debug\netcoreapp3.1\Razor\Views\Home\ListGroups.cshtml.g.cs
+C:\Users\murph\Source\Repos\TempleTourProject\obj\Debug\netcoreapp3.1\Razor\Views\Home\Delete.cshtml.g.cs

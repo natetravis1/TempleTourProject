@@ -77,7 +77,34 @@ namespace TempleTourProject.Controllers
         {
             var groups = repo.Groups
                 .ToList();
+
             return View(groups);
+
+        }
+        
+
+        [HttpGet]
+        public IActionResult Edit (int groupid)
+        {
+            var group = repo.Groups.Single(x => x.GroupId == groupid);
+
+            return View("AddGroupForm", group);
+        }
+
+        [HttpGet]
+        public IActionResult Delete (int groupid)
+        {
+            var group = repo.Groups.Single(x => x.GroupId == groupid);
+
+            return View(group);
+        }
+
+        [HttpPost]
+        public IActionResult Delete(Group g)
+        {
+            repo.DeleteGroup(g);
+            repo.SaveGroup(g);
+            return RedirectToAction("ListGroups");
         }
 
     }

@@ -4,6 +4,7 @@
 
 @model List<Group>
 
+
 <table class="table table-bordered table-dark table-striped">
 
     <thead class="font-weight-bold">
@@ -27,8 +28,23 @@
             <td>@x.Email</td>
             <td>@x.Phone</td>
             <td>@x.AppointmentTime</td>
+            <td><a asp-controller="Home" asp-action="Edit" asp-route-groupid="@x.GroupId">Edit</a></td>
+            <td><a asp-controller="Home" asp-action="Delete" asp-route-groupid="@x.GroupId">Delete</a></td>
         </tr>
         }
+
+  
+        @*<tr>
+            <td>@Model.Group.Date</td>
+            <td>@Model.Group.GroupName</td>
+            <td>@Model.Group.GroupSize</td>
+            <td>@Model.Group.Email</td>
+            <td>@Model.Group.Phone</td>
+            <td>@Model.Group.AppointmentTime</td>
+            <td><a asp-controller="Home" asp-action="Edit" asp-route-groupid="@Model.Group.GroupId">Edit</a></td>
+            <td><a asp-controller="Home" asp-action="Delete" asp-route-groupid="@Model.Group.GroupId">Delete</a></td>
+        </tr>*@
+        
     </tbody>
 
 </table>
