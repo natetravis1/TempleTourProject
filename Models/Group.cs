@@ -12,8 +12,10 @@ namespace TempleTourProject.Models
         [Required]
         public string GroupName { get; set; }
         [Required]
+        [Range(0,15)]
         public int GroupSize { get; set; }
         [Required]
+        [EmailAddress]
         public string Email { get; set; }
         public string Phone { get; set; }
 
