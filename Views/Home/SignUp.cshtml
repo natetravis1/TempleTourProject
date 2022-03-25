@@ -9,31 +9,22 @@
     <h4>Please choose a date and time for your tour.</h4>
 </div>
 
-
-<!--<table class="table-outlined">
-    <tr>-->
-@* we could implement a calendar to pick the date dynamically and store that to the session somehow - like the example *@
-<!--<th>Monday</th>
-    <th>Tuesday</th>
-    <th>Wednesday</th>
-    <th>Thursday</th>
-    <th>Friday</th>
-    <th>Saturday</th>
-    <th>Sunday</th>
-</tr>-->
-@*<tr>
-        @foreach (var t in Model)
-        {
-            <td><button>@t.AppointmentTime</button></td>
-        }
-    </tr>*@
-<!--</table>-->
-@* I want when they click one of these buttons that the time slot will get carried over into the addgroupform *@
-
-@* Make a date field that gets carried in *@
-<div class="container">
-
+<div class="date">
+    @if (ViewBag.Disable)
+    {
+        <a class="btn btn-secondary" disabled>Previous</a>
+    }
+    else
+    {
+        <a class="btn btn-warning" asp-controller="Home" asp-action="PreviousDate" asp-route-curDate="@ViewBag.CurDate">Previous</a>
+    }
+    <button class="btn btn-dark">@ViewBag.CurDate</button>
+    <a class="btn btn-danger" asp-controller="Home" asp-action="NextDate" asp-route-curDate="@ViewBag.CurDate">Next</a>
 </div>
+
+
+<br />
+@* Make a date field that gets carried in *@
 
 <div class="container ">
     <div class="btn-group-lg">
@@ -41,12 +32,12 @@
         {
             @if (x.Taken == false)
             {
-        <form method="get" asp-controller="Home" asp-action="AddGroupForm">
-            <input type="hidden" value="@x.AppointmentId" name="TimeId" />
-            <input type="hidden" value="@x.AppointmentTime" name="Time" />
-            <input type="hidden" value="" name="Date" />
-            <button type="submit" class="btn btn-primary" style="width:1000px;">@x.AppointmentTime</button>
-        </form>
+                <form method="get" asp-controller="Home" asp-action="AddGroupForm" asp-route-curDate="@ViewBag.CurDate">
+                    <input type="hidden" value="@x.AppointmentId" name="TimeId" />
+                    <input type="hidden" value="@x.AppointmentTime" name="Time" />
+                    <input type="hidden" value="@ViewBag.CurDate" name="Date" />
+                    <button type="submit" class="btn btn-primary" style="width:1000px;">@x.AppointmentTime</button>
+                </form>
                 <br />
             }
         }
@@ -54,4 +45,4 @@
 </div>
 
 
-     
+

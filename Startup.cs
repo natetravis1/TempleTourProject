@@ -33,6 +33,8 @@ namespace TempleTourProject
             });
 
             services.AddScoped<ITempleRepository, EFTempleRepository>();
+
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,6 +47,7 @@ namespace TempleTourProject
             app.UseStaticFiles();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseSession();
 
             app.UseRouting();
 

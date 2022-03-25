@@ -26,8 +26,8 @@
             <label asp-for="@Model.Appointment.AppointmentId">Appointment Id: </label>
             <input asp-for="@Model.Appointment.AppointmentId" value="@Model.Appointment.AppointmentId" readonly /><br />
 
-            <label asp-for="@Model.Group.Date">Appointment Date:</label>
-            <input asp-for="@Model.Group.Date" /><br />
+            <label asp-for="@Model.Appointment.Date">Appointment Date:</label>
+            <input asp-for="@Model.Appointment.Date" value="@ViewBag.CurDate" readonly/><br />
 
             <label asp-for="@Model.Group.GroupName">Name of Group:</label>
             <input asp-for="@Model.Group.GroupName" /><br />
