@@ -49,10 +49,39 @@ namespace TempleTourProject.Controllers
             }
 
             var appointments = repo.Appointments
-                //.Where(x => x.Date == curdate)
                 .ToList();
 
             return View(appointments);
+        }
+
+        public IActionResult PreviousDate(string curDate)
+        {
+            HttpContext.Session.Remove("date");
+            HttpContext.Session.Remove("time");
+
+            string[] formats = { "MM/dd/yyyy" };
+            DateTime curdate = DateTime.ParseExact(curDate, formats, System.Globalization.CultureInfo.InvariantCulture);
+            DateTime previousDate = curdate.AddDays(-1);
+            string s_previous = previousDate.ToString("MM/dd/yyyy");
+
+            ViewBag.CurDate = s_previous;
+
+            return RedirectToAction("Signup", new { curdate = s_previous });
+        }
+
+        public IActionResult NextDate(string curDate)
+        {
+            HttpContext.Session.Remove("date");
+            HttpContext.Session.Remove("time");
+
+            string[] formats = { "MM/dd/yyyy" };
+            DateTime curdate = DateTime.ParseExact(curDate, formats, System.Globalization.CultureInfo.InvariantCulture);
+            DateTime nextDate = curdate.AddDays(1);
+            string s_next = nextDate.ToString("MM/dd/yyyy");
+
+            ViewBag.CurDate = s_next;
+
+            return RedirectToAction("Signup", new { curdate = s_next });
         }
 
         //this is for finalizing an appointment
@@ -64,12 +93,10 @@ namespace TempleTourProject.Controllers
 
             if (HttpContext.Session.GetString("date") == null)
             {
-                // set the pair's value with curDate
                 HttpContext.Session.SetString("date", Date);
             }
             else
             {
-                // set CurDate in ViewBag with the value of the "date" pair
                 ViewBag.CurDate = HttpContext.Session.GetString("date");
             }
 
@@ -124,7 +151,6 @@ namespace TempleTourProject.Controllers
             HttpContext.Session.Remove("time");
 
             var groups = repo.Groups
-                //.Where(x => x.Date)
                 .ToList();
 
             return View(groups);
