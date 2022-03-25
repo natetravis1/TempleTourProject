@@ -26,23 +26,32 @@
 <br />
 @* Make a date field that gets carried in *@
 
-<div class="container ">
-    <div class="btn-group-lg">
-        @foreach (Appointment x in Model)
-        {
-            @if (x.Taken == false)
+    <div class="container ">
+        <div class="btn-group-lg">
+            @if (Model?.Count() > 0)
             {
-                <form method="get" asp-controller="Home" asp-action="AddGroupForm" asp-route-curDate="@ViewBag.CurDate">
-                    <input type="hidden" value="@x.AppointmentId" name="TimeId" />
-                    <input type="hidden" value="@x.AppointmentTime" name="Time" />
-                    <input type="hidden" value="@ViewBag.CurDate" name="Date" />
-                    <button type="submit" class="btn btn-primary" style="width:1000px;">@x.AppointmentTime</button>
-                </form>
-                <br />
+
+                @foreach (Appointment x in Model)
+                {
+                    @if (x.Taken == false)
+                    {
+                        <form method="get" asp-controller="Home" asp-action="AddGroupForm" asp-route-curDate="@ViewBag.CurDate">
+                            <input type="hidden" value="@x.AppointmentId" name="TimeId" />
+                            <input type="hidden" value="@x.AppointmentTime" name="Time" />
+                            <input type="hidden" value="@ViewBag.CurDate" name="Date" />
+                            <button type="submit" class="btn btn-primary" style="width:1000px;">@x.AppointmentTime</button>
+                        </form>
+                        <br />
+                    }
+                }
             }
-        }
+            else
+            {
+               
+            }
+        </div>
     </div>
-</div>
+
 
 
 
